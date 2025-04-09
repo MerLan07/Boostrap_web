@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>APPLE</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/_custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href=""><img src="Images/Apple.png" width="30" height="auto"> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Review</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#About-Us">About us</a>
+                    </li>
+                </ul>
+                <div>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#adminModal">Admin</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Modal -->
+<div class="modal fade" id="adminModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Admin Section</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary"><a class="nav-link text-white" href="admin.html">Submit</a></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product Detail Modal -->
+<div class="modal fade" id="productDetailModal" tabindex="-1" aria-labelledby="productDetailModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="productDetailModalLabel">Detail produktu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>Tady budou detaily o vybraném produktu – například popis, technické specifikace a cena.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zavřít</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<main>
+    <section class="welcome-info d-flex justify-content-center align-items-center text-center">
+        <div class="container text-center text-light">
+            <h1 class="py-5"><strong>Discover top Apple products</strong></h1>
+            <h4 class="text-cyan">Style, performance and innovation for everyday life and work.</h4>
+        </div>
+    </section>
+    <!-- Products -->
+    <section id="products">
+        <div class="container px-4 text-center">
+            <h2 class="section-title">Our Products</h2>
+            <div class="row gx-5 gy-5">
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="Images/Iphone%2015.jpg" class="card-img-top" alt="iPhone 15">
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone 15</h5>
+                            <p class="card-text">A top-of-the-line phone with Dynamic Island and the powerful A16 Bionic chip.</p>
+                            <a href="#" class="btn btn-primary">BUY</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="Images/macbook-air.jpg" class="card-img-top" alt="MacBook Air">
+                        <div class="card-body">
+                            <h5 class="card-title">MacBook Air </h5>
+                            <p class="card-text">A lightweight and powerful laptop with an M2 chip ideal for students and professionals.</p>
+                            <a href="#" class="btn btn-primary">BUY</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="Images/Ipad-Pro.jpg" class="card-img-top" alt="iPad Pro">
+                        <div class="card-body">
+                            <h5 class="card-title">iPad Pro</h5>
+                            <p class="card-text">A tablet with a Liquid Retina display and an M2 chip for creativity and work.</p>
+                            <a href="#" class="btn btn-primary">BUY</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Rewiews -->
+    <section id="reviews">
+        <div class="container mt-5">
+            <h2 class="section-title">Rewiews from people</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <p>The iPhone 15 is incredibly fast and the photos are perfect!</p>
+                        <footer>
+                            <h2>Lionel Messi</h2>
+                        <div class="text-center">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        </footer>
+                    </blockquote>
+
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <p>The MacBook Air M2 pleasantly surprised me with its battery life and performance.</p>
+                        <footer>
+                            <h2>Cristiano Ronaldo</h2>
+                            <div class="text-center">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star "></span>
+                            </div>
+                        </footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <p>I use the iPad Pro daily for work and play. Great choice.</p>
+                        <footer>
+                            <h2>Neymar JR</h2>
+                            <div class="text-center">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container mt-5 mb-7">
+            <h2 class="text-center my-5">Contact Us</h2>
+            <div class="row">
+                <div class="col-6 my-5">
+                    <h3 class="text-center mb-4">You can follow us on social media.</h3>
+                    <div class="text-center">
+                        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                        <a href="https://x.com/" class="fa fa-twitter"></a>
+                        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                        <h4 class="mt-4">California USA 2025</h4>
+                    </div>
+
+                </div>
+                <div class="col-6 ">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                        </div>
+                        <div class="mb-3 row-gx-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Your Message..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-4 ">Send</button>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="About-Us">
+        <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">About Us</h2>
+            <p class="lead text-center mb-5">
+                We are a team of enthusiasts who care about quality products at the cheapest possible price.
+            </p>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Milan Koutný</h5>
+                            <p class="card-text">Founder & developer. He is behind the design and implementation of this website.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Petr Dobeš</h5>
+                            <p class="card-text">The designer of this website. He makes sure the website works properly and handles all the profits.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Filip Kamenčák</h5>
+                            <p class="card-text">He takes care of various collaborations that come in all the time and handles them. He also takes care of social networks.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card h-100 shadow mt-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Apple Team</h5>
+                        <p class="card-text">Our company offers reliable and affordable Apple products that are of top quality that you will love. Don't hesitate and order your Apple product now.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2025 Milan Koutný Apple Founder.</p>
+</footer>
+
+<script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
